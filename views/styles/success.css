@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+
+    --fontColor: #1f2031;
+}
+
+body{
+    
+    background-color: #36384E;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card{
+
+    width: 350px;
+    height: 350px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+
+    font-family: 'Roboto';
+}
+
+#tickImage{
+
+    width: 3.3rem;
+}
+h1{
+
+    padding: 20px 0px;
+
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--fontColor);
+
+}
+
+#message{
+
+    font-size: 0.9rem;
+    color: var(--fontColor);
+
+    margin: 0px 0px 40px 0px;
+}
+
+#userMail{
+    font-weight: bold;
+}
+
+
+#dismissButton{
+
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    background: var(--fontColor);
+    width: 100%;
+    
+    padding: 16px;
+    border-radius: 8px;
+
+    transition: box-shadow ease 0.5s;
+}
+
+#dismissButton:hover{
+
+    background: linear-gradient( 90deg, #FF5476, #FE683F);
+    box-shadow: 0px 10px 20px #FE683F ; 
+    cursor: pointer;
+    
+}
+

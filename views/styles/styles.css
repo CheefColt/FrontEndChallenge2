@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+
+    --fontColor: #262735;
+}
+
+body{
+
+    background-color: #36384E;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+
+}
+
+
+.sign-up{
+
+    /* Display Properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+
+    /* Size Properties */
+    width: 50%;
+    height: 470px;
+    border-radius: 20px;
+    padding: 20px;
+
+    /* Positon Properties */
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    align-items: center;
+
+    /* Aesthetics Property */
+    background-color: white;
+    font-family: "Roboto";
+
+}
+
+h1{
+
+    font-weight: 1000px;
+    font-size: 2.6rem;
+    color: var(--fontColor);
+}
+
+#belowHeading{
+
+    display: block;
+    width: 100%;
+    padding: 20px 0px 10px 0px;
+
+    font-size: 0.9rem;
+    color: var(--fontColor);
+
+}
+
+#list{
+
+    list-style-type: none ;
+    line-height: 2rem;
+    font-size: 1rem;
+    
+}
+
+.list_sub{
+
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    gap: 10px;
+}
+
+p{
+    display: inline-block;
+}
+
+
+
+.formDiv{
+
+    padding: 20px 0px;
+
+}
+
+#label_text{
+
+    font-size: 0.7rem;
+    color: var(--fontColor);
+    font-weight: bolder;
+}
+
+#emailInput{
+
+    margin: 5px 0px 15px 0px;
+    border: 1px solid rgb(185, 185, 185);
+    width: 80%;
+
+
+}
+
+#subButton{
+
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    background: var(--fontColor);
+    width: 90%;
+    
+    transition: box-shadow ease 0.5s;
+}
+
+#subButton:hover{
+
+    background: linear-gradient( 90deg, #FF5476, #FE683F);
+    box-shadow: 0px 10px 20px #FE683F ; 
+    cursor: pointer;
+    
+}
+
+#emailInput, #subButton{
+
+    padding: 16px;
+    border-radius: 8px;
+
+}
+
+
+.left_info{
+
+    width: 50%;
+    padding: 20px;
+}
+
+
+
+.right_info{
+
+    width: 20%;
+    
+}
+
+
+.sign-up-image{
+
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+
+
+
+.emailError{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0;
+    margin: 0;
+    width: 90%;
+}
+
+#errorMessage{
+
+    color: #ed4644;
+    animation: errorAni 0.5s;
+    
+}
+
+@keyframes errorAni {
+    
+    0%{
+        opacity: 100%
+    }
+    50%{
+        opacity: 0%
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
